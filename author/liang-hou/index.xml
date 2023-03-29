@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Liang Hou | Trustworthy ML &amp; Social Computing</title>
+    <link>https://example.com/author/liang-hou/</link>
+      <atom:link href="https://example.com/author/liang-hou/index.xml" rel="self" type="application/rss+xml" />
+    <description>Liang Hou</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 27 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/logo_huc7cbb2f54322e8da3574e60b363bff37_412655_300x300_fit_lanczos_3.png</url>
+      <title>Liang Hou</title>
+      <link>https://example.com/author/liang-hou/</link>
+    </image>
+    
+    <item>
+      <title>SDGNN: Learning node representation for signed directed networks</title>
+      <link>https://example.com/publication/sbgnn/</link>
+      <pubDate>Sat, 27 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/sbgnn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adversarial Immunization for Certifiable Robustness on Graphs</title>
+      <link>https://example.com/publication/advimmune/</link>
+      <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/advimmune/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

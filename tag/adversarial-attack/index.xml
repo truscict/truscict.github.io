@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adversarial Attack | Trustworthy ML &amp; Social Computing</title>
+    <link>https://example.com/tag/adversarial-attack/</link>
+      <atom:link href="https://example.com/tag/adversarial-attack/index.xml" rel="self" type="application/rss+xml" />
+    <description>Adversarial Attack</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/logo_huc7cbb2f54322e8da3574e60b363bff37_412655_300x300_fit_lanczos_3.png</url>
+      <title>Adversarial Attack</title>
+      <link>https://example.com/tag/adversarial-attack/</link>
+    </image>
+    
+    <item>
+      <title>Single Node Injection Attack against Graph Neural Networks</title>
+      <link>https://example.com/publication/gnia/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/gnia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adversarial Immunization for Certifiable Robustness on Graphs</title>
+      <link>https://example.com/publication/advimmune/</link>
+      <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/advimmune/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
