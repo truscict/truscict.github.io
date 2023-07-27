@@ -5,21 +5,13 @@
     <link>https://example.com/author/yunfan-wu/</link>
       <atom:link href="https://example.com/author/yunfan-wu/index.xml" rel="self" type="application/rss+xml" />
     <description>Yunfan Wu</description>
-<<<<<<< HEAD
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
-    <image>
-      <url>https://example.com/author/yunfan-wu/avatar_hu10c7fdde1275dc24c04da771575848a4_24167_270x270_fill_q75_lanczos_center.jpeg</url>
-=======
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/logo_huc7cbb2f54322e8da3574e60b363bff37_412655_300x300_fit_lanczos_3.png</url>
->>>>>>> 1626db86fe7c7cccb06d2c81a28806bac0881478
       <title>Yunfan Wu</title>
       <link>https://example.com/author/yunfan-wu/</link>
     </image>
     
-<<<<<<< HEAD
-=======
     <item>
       <title>INMO: A Model-Agnostic and Scalable Module for Inductive Collaborative Filtering</title>
       <link>https://example.com/publication/inmo/</link>
@@ -36,6 +28,5 @@
       <description></description>
     </item>
     
->>>>>>> 1626db86fe7c7cccb06d2c81a28806bac0881478
   </channel>
 </rss>
