@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Signed Networks | Trustworthy ML &amp; Social Computing</title>
+    <link>https://example.com/tag/signed-networks/</link>
+      <atom:link href="https://example.com/tag/signed-networks/index.xml" rel="self" type="application/rss+xml" />
+    <description>Signed Networks</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 30 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/logo_huc7cbb2f54322e8da3574e60b363bff37_412655_300x300_fit_lanczos_3.png</url>
+      <title>Signed Networks</title>
+      <link>https://example.com/tag/signed-networks/</link>
+    </image>
+    
+    <item>
+      <title>Signed Bipartite Graph Neural Networks</title>
+      <link>https://example.com/publication/sdgnn/</link>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/sdgnn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SDGNN: Learning node representation for signed directed networks</title>
+      <link>https://example.com/publication/sbgnn/</link>
+      <pubDate>Sat, 27 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/sbgnn/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

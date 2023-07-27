@@ -1,0 +1,1207 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.6.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="While online medical crowdfunding achieved tremendous success, quantitative study about whether and how medical crowdfunding helps people remains little explored. In this paper, we empirically study how online medical crowdfunding helps people using more than 27, 000 fundraising cases in Waterdrop Fundraising, one of the most popular online medical crowdfunding platforms in China. We find that the amount of money obtained by fundraisers is broadly distributed, i.e., a majority of lowly donated cases coexist with a handful of very successful cases. We further investigate the factors that potentially correlate with the success of medical fundraising cases. Profile information of fundraising cases, e.g., geographic information of fundraisers, affects the donated amounts, since detailed description may increase the credibility of a fundraising case. One prominent finding lies in the effect of social network on the success of fundraising cases, the spread of fundraising information along social network is a key factor of fundraising success, and the social capital of fundraisers play an important role in fundraising. Finally, we conduct prediction of donations using machine learning models, verifying the effect of potential factors to the success of medical crowdfunding. Altogether, this work presents a data-driven view of medical fundraising on the web and opens a door to understanding medical crowdfunding." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://example.com/publication/waterdrop/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.ce39d5378debab09474c9f8ed29efacd.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_huc7cbb2f54322e8da3574e60b363bff37_412655_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_huc7cbb2f54322e8da3574e60b363bff37_412655_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://example.com/publication/waterdrop/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+  <meta property="og:site_name" content="Trustworthy ML &amp; Social Computing" />
+  <meta property="og:url" content="https://example.com/publication/waterdrop/" />
+  <meta property="og:title" content="How Medical Crowdfunding Helps People? A Large-scale Case Study on the Waterdrop Fundraising | Trustworthy ML &amp; Social Computing" />
+  <meta property="og:description" content="While online medical crowdfunding achieved tremendous success, quantitative study about whether and how medical crowdfunding helps people remains little explored. In this paper, we empirically study how online medical crowdfunding helps people using more than 27, 000 fundraising cases in Waterdrop Fundraising, one of the most popular online medical crowdfunding platforms in China. We find that the amount of money obtained by fundraisers is broadly distributed, i.e., a majority of lowly donated cases coexist with a handful of very successful cases. We further investigate the factors that potentially correlate with the success of medical fundraising cases. Profile information of fundraising cases, e.g., geographic information of fundraisers, affects the donated amounts, since detailed description may increase the credibility of a fundraising case. One prominent finding lies in the effect of social network on the success of fundraising cases, the spread of fundraising information along social network is a key factor of fundraising success, and the social capital of fundraisers play an important role in fundraising. Finally, we conduct prediction of donations using machine learning models, verifying the effect of potential factors to the success of medical crowdfunding. Altogether, this work presents a data-driven view of medical fundraising on the web and opens a door to understanding medical crowdfunding." /><meta property="og:image" content="https://example.com/publication/waterdrop/featured.png" />
+    <meta property="twitter:image" content="https://example.com/publication/waterdrop/featured.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2021-01-07T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-01-07T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://example.com/publication/waterdrop/"
+  },
+  "headline": "How Medical Crowdfunding Helps People? A Large-scale Case Study on the Waterdrop Fundraising",
+  
+  "image": [
+    "https://example.com/publication/waterdrop/featured.png"
+  ],
+  
+  "datePublished": "2021-01-07T00:00:00Z",
+  "dateModified": "2021-01-07T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Junjie Huang"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Trustworthy ML \u0026 Social Computing",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://example.com/media/logo_huc7cbb2f54322e8da3574e60b363bff37_412655_192x192_fit_lanczos_3.png"
+    }
+  },
+  "description": "While online medical crowdfunding achieved tremendous success, quantitative study about whether and how medical crowdfunding helps people remains little explored. In this paper, we empirically study how online medical crowdfunding helps people using more than 27, 000 fundraising cases in Waterdrop Fundraising, one of the most popular online medical crowdfunding platforms in China. We find that the amount of money obtained by fundraisers is broadly distributed, i.e., a majority of lowly donated cases coexist with a handful of very successful cases. We further investigate the factors that potentially correlate with the success of medical fundraising cases. Profile information of fundraising cases, e.g., geographic information of fundraisers, affects the donated amounts, since detailed description may increase the credibility of a fundraising case. One prominent finding lies in the effect of social network on the success of fundraising cases, the spread of fundraising information along social network is a key factor of fundraising success, and the social capital of fundraisers play an important role in fundraising. Finally, we conduct prediction of donations using machine learning models, verifying the effect of potential factors to the success of medical crowdfunding. Altogether, this work presents a data-driven view of medical fundraising on the web and opens a door to understanding medical crowdfunding."
+}
+</script>
+
+  
+
+  
+
+  
+
+
+  <title>How Medical Crowdfunding Helps People? A Large-scale Case Study on the Waterdrop Fundraising | Trustworthy ML &amp; Social Computing</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="3e13d7e75d58847ca57c794e092b7d21" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.1ee5462d74c6c0de1f8881b384ecc58d.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/"><img src="/media/logo_huc7cbb2f54322e8da3574e60b363bff37_412655_0x70_resize_lanczos_3.png" alt="Trustworthy ML &amp; Social Computing"
+            
+            ></a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/"><img src="/media/logo_huc7cbb2f54322e8da3574e60b363bff37_412655_0x70_resize_lanczos_3.png" alt="Trustworthy ML &amp; Social Computing"
+          
+          ></a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/news"><span>News</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+<div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>How Medical Crowdfunding Helps People? A Large-scale Case Study on the Waterdrop Fundraising</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/junjie-huang/">Junjie Huang</a></span>, <span >
+      <a href="/author/huawei-shen/">Huawei Shen</a></span>, <span >
+      <a href="/author/qi-cao/">Qi Cao</a></span>, <span >
+      <a href="/author/li-cai/">Li Cai</a></span>, <span >
+      <a href="/author/xueqi-cheng/">Xueqi Cheng</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    January 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/abs/2011.13608" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
+        data-filename="/publication/waterdrop/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 526px;">
+  <div style="position: relative">
+    <img src="/publication/waterdrop/featured_hu7039cca607e678d7f22c2c9963bb7978_188146_720x2500_fit_q75_h2_lanczos_3.webp" width="720" height="526" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract">While online medical crowdfunding achieved tremendous success, quantitative study about whether and how medical crowdfunding helps people remains little explored. In this paper, we empirically study how online medical crowdfunding helps people using more than 27, 000 fundraising cases in Waterdrop Fundraising, one of the most popular online medical crowdfunding platforms in China. We find that the amount of money obtained by fundraisers is broadly distributed, i.e., a majority of lowly donated cases coexist with a handful of very successful cases. We further investigate the factors that potentially correlate with the success of medical fundraising cases. Profile information of fundraising cases, e.g., geographic information of fundraisers, affects the donated amounts, since detailed description may increase the credibility of a fundraising case. One prominent finding lies in the effect of social network on the success of fundraising cases, the spread of fundraising information along social network is a key factor of fundraising success, and the social capital of fundraisers play an important role in fundraising. Finally, we conduct prediction of donations using machine learning models, verifying the effect of potential factors to the success of medical crowdfunding. Altogether, this work presents a data-driven view of medical fundraising on the web and opens a door to understanding medical crowdfunding.</p>
+    
+
+    
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            <a href="/publication/#1">
+              Conference paper
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">In <em>International AAAI Conference on Web and Social Media</em></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/crowdfunding/">Crowdfunding</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://example.com/publication/waterdrop/&amp;text=How%20Medical%20Crowdfunding%20Helps%20People?%20A%20Large-scale%20Case%20Study%20on%20the%20Waterdrop%20Fundraising" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://example.com/publication/waterdrop/&amp;t=How%20Medical%20Crowdfunding%20Helps%20People?%20A%20Large-scale%20Case%20Study%20on%20the%20Waterdrop%20Fundraising" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=How%20Medical%20Crowdfunding%20Helps%20People?%20A%20Large-scale%20Case%20Study%20on%20the%20Waterdrop%20Fundraising&amp;body=https://example.com/publication/waterdrop/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://example.com/publication/waterdrop/&amp;title=How%20Medical%20Crowdfunding%20Helps%20People?%20A%20Large-scale%20Case%20Study%20on%20the%20Waterdrop%20Fundraising" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=How%20Medical%20Crowdfunding%20Helps%20People?%20A%20Large-scale%20Case%20Study%20on%20the%20Waterdrop%20Fundraising%20https://example.com/publication/waterdrop/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://example.com/publication/waterdrop/&amp;title=How%20Medical%20Crowdfunding%20Helps%20People?%20A%20Large-scale%20Case%20Study%20on%20the%20Waterdrop%20Fundraising" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © CAS
+  </p>
+  
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.54dd6e4d8f2e4b1d098381b57f18dd83.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

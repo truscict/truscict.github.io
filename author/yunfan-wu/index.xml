@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yunfan Wu | Trustworthy ML &amp; Social Computing</title>
+    <link>https://example.com/author/yunfan-wu/</link>
+      <atom:link href="https://example.com/author/yunfan-wu/index.xml" rel="self" type="application/rss+xml" />
+    <description>Yunfan Wu</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://example.com/author/yunfan-wu/avatar_hu10c7fdde1275dc24c04da771575848a4_24167_270x270_fill_q75_lanczos_center.jpeg</url>
+      <title>Yunfan Wu</title>
+      <link>https://example.com/author/yunfan-wu/</link>
+    </image>
+    
+  </channel>
+</rss>
