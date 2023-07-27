@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>陶舒畅 | 基础研究组</title>
+    <link>https://example.com/author/%E9%99%B6%E8%88%92%E7%95%85/</link>
+      <atom:link href="https://example.com/author/%E9%99%B6%E8%88%92%E7%95%85/index.xml" rel="self" type="application/rss+xml" />
+    <description>陶舒畅</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language>
+    <image>
+      <url>https://example.com/author/%E9%99%B6%E8%88%92%E7%95%85/avatar_hu2f8b9d94314b32454909ea7c88db497b_7218_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>陶舒畅</title>
+      <link>https://example.com/author/%E9%99%B6%E8%88%92%E7%95%85/</link>
+    </image>
+    
+  </channel>
+</rss>
